@@ -25,7 +25,7 @@ jobs:
       USER: ${{ github.repository_owner }}
       REPO: ${{ github.event.repository.name }}
       #if you use Gitpage and your repo'name is not {usernmae}.github.io,please use this
-      BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+      BASE_URL: https://briteming.github.io/Issue_Blog
       # else if your repo's name is {usernmae}.github.io,please use this,please use this
       # BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
