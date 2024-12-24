@@ -42,10 +42,10 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: git clone https://github.com/WQhuanm/Test_Blog_Repo.git output #please change the clone repo to your own，format as follow：git clone https://$GH_TOKEN@github.com/{username}/{repo}.git output 
+      - name: git clone https://github.com/briteming/Test_Blog_Repo.git output #please change the clone repo to your own，format as follow：git clone https://$GH_TOKEN@github.com/{username}/{repo}.git output 
         run: |
           npm install -g hexo-cli
-          git clone https://github.com/WQhuanm/Test_Blog_Repo.git output
+          git clone https://github.com/briteming/Test_Blog_Repo.git output
           cd output && sudo rm -rf node_modules
           npm install 
           mkdir -p ./source/_posts/ && cp ../Blog/* ./source/_posts/
