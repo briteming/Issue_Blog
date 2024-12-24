@@ -42,7 +42,7 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: https://github.com/WQhuanm/Test_Blog_Repo.git #please change the clone repo to your own，format as follow：git clone https://$GH_TOKEN@github.com/{username}/{repo}.git output 
+      - name: git clone https://github.com/WQhuanm/Test_Blog_Repo.git output #please change the clone repo to your own，format as follow：git clone https://$GH_TOKEN@github.com/{username}/{repo}.git output 
         run: |
           npm install -g hexo-cli
           npm create kira-hexo@latest output
